@@ -9,3 +9,7 @@ A custom-built GUI table for editing and maintaining values stored in Scriptable
 
 ![GlobalFactionDictionaryWindow.cs](https://i.imgur.com/FFnKcXm.png)
 
+<b>PlayerInfo.cs</b>
+
+Handles the Player's Info within SALVO. It syncs data across clients and is also used to so the game can handle AI opponents the same as it would with a human player.
+
