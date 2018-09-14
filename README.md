@@ -11,5 +11,5 @@ A custom-built GUI table for editing and maintaining values stored in Scriptable
 
 [<b>PlayerInfo.cs</b>](https://github.com/bevansMedia/CodeExamples/blob/master/PlayerInfo.cs)
 
-Handles the Player's Info within SALVO. It syncs data across clients and is also used to so the game can handle AI opponents the same as it would with a human player.
+Handles the Player's Info within SALVO. It syncs data across clients and is also used so the game can handle AI opponents the same as it would with a human player.
 
