@@ -123,11 +123,11 @@ public class PlayerInfo : PunBehaviour
             !PhotonNetwork.offlineMode && 
             SceneManager.GetActiveScene().name == "Main_Menu")
         {
-            CreatePlayerLobbyEntry();
+            CreatePlayerLobbyEntryGameObject();
         }
     }
 
-    private void CreatePlayerLobbyEntry()
+    private void CreatePlayerLobbyEntryGameObject()
     {
         var data = new object[1];
         data[0] = photonView.viewID;
@@ -156,7 +156,7 @@ public class PlayerInfo : PunBehaviour
         AssignedIDs.Clear();
 
         if(!IsAI)
-            Destroy(gameObject); //Was PhotonDestroy, but was only deactivating GO, so it remained
+            Destroy(gameObject); //NOTE: Was PhotonDestroy but pooling prevented it from being removed properly
     }
 
     public override void OnPhotonPlayerDisconnected(PhotonPlayer otherPlayer)
@@ -403,4 +403,3 @@ public class PlayerInfo : PunBehaviour
     
     #endregion
 }
-
